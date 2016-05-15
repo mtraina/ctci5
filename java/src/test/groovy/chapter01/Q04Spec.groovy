@@ -16,5 +16,6 @@ class Q04Spec extends Specification {
         "cheers"                | 6         | "cheers"
         "hello world"           | 11        | "hello%20world"
         "looking forward to it" | 21        | "looking%20forward%20to%20it"
+        "danger!  "             | 9         | "danger!%20%20"
     }
 }
