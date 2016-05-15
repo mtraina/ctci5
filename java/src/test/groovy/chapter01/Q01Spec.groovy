@@ -1,6 +1,7 @@
 package chapter01
 
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class Q01Spec extends Specification {
 
@@ -14,6 +15,7 @@ class Q01Spec extends Specification {
         !Q01.isUniqueCharsStreams(text)
     }
 
+    @Unroll
     def "is unique chars should return #expected when receives #text"() {
         expect:
         Q01.isUniqueChars(text) == expected
