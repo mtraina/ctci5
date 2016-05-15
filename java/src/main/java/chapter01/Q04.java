@@ -1,33 +1,42 @@
 package chapter01;
 
-import java.util.Arrays;
-import java.util.stream.StreamSupport;
-
-import static java.util.Objects.isNull;
-
 public class Q04 {
-    public static String replaceSpaces(String text){
-        if(isNull(text)){
-            return null;
+
+    public static String replaceSpaces(char[] chars, int length){
+        char empty = ' ';
+        int emptySpaces = 0;
+
+        for(char c : chars) {
+            if (c == empty) {
+                emptySpaces++;
+            }
         }
 
-        char empty = ' ';
-        Long emptySpaceNum = text.chars()
-                .mapToObj(i -> (char)i)
-                .filter(c -> c == empty)
-                .count();
+        // if there are no empty spaces, the string shouldn't change, so return earlier
+        if(emptySpaces == 0){
+            return String.copyValueOf(chars);
+        }
 
-        char[] newText = new char[text.length() + emptySpaceNum.intValue() * 2];
+        char[] newText = new char[length + emptySpaces * 2];
 
-        for(int i = 0; i < text.length() - 1; i++){
-            if(text.charAt(i) == empty){
-                newText[i] = '%';
-                newText[i+1] = '2';
-                newText[i+2] = '0';
+        int newTextIndex = 0;
+        for(int i = 0; i < length; i++){
+            int newTextIndexStep = 1;
+
+            if(chars[i] == empty){
+                newText[newTextIndex] = '%';
+                newText[newTextIndex+1] = '2';
+                newText[newTextIndex+2] = '0';
+
+                // bigger step here
+                newTextIndexStep = 3;
             }
             else {
-                newText[i] = text.charAt(i);
+                newText[newTextIndex] = chars[i];
             }
+
+            // increase the step for the new text accordingly
+            newTextIndex += newTextIndexStep;
         }
 
         return String.copyValueOf(newText);
