@@ -10,12 +10,14 @@ class Q01Spec extends Specification {
         (0..256).forEach {text += (char)it}
 
         expect:
-        !Q01.isUniqueChars2(text)
+        !Q01.isUniqueChars(text)
+        !Q01.isUniqueCharsStreams(text)
     }
 
     def "is unique chars should return #expected when receives #text"() {
         expect:
-        Q01.isUniqueChars2(text) == expected
+        Q01.isUniqueChars(text) == expected
+        Q01.isUniqueCharsStreams(text) == expected
 
         where:
         text    | expected
