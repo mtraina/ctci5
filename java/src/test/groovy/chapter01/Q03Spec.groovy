@@ -13,6 +13,7 @@ class Q03Spec extends Specification {
         where:
         first   | second    | expected
         null    | null      | false
+        "abc"   | "ab"      | false
         "abc"   | "acb"     | true
     }
 }
