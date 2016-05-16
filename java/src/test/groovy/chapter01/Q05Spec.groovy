@@ -3,10 +3,22 @@ package chapter01
 import spock.lang.Specification
 import spock.lang.Unroll
 
-
+@Unroll
 class Q05Spec extends Specification {
 
-    @Unroll
+    def "it should calculate the compressed size of #text as #size"(){
+        expect:
+        Q05.compressedSize(text) == size
+
+        where:
+        text            | size
+        "aa"            | 2
+        "ab"            | 4
+        "abb"           | 4
+        "aabbbcccc"     | 6
+        "aaaaaaaaaab"   | 5
+    }
+
     def "it should compress #original to #expected"() {
         expect:
         Q05.compress(original) == expected
