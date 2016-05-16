@@ -19,8 +19,7 @@ public class Q05 {
                 count++;
             }
             else {
-                compressed[j] = current;
-                j++;
+                compressed[j++] = current;
                 char[] countChars = String.valueOf(count).toCharArray();
                 for(int k=0; k<countChars.length; k++){
                     compressed[j+k] = countChars[k];
@@ -31,8 +30,7 @@ public class Q05 {
             }
         }
 
-        compressed[j] = current;
-        j++;
+        compressed[j++] = current;
         char[] countChars = String.valueOf(count).toCharArray();
         for(int k=0; k<countChars.length; k++){
             compressed[j+k] = countChars[k];
