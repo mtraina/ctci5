@@ -7,18 +7,16 @@ public class Q01 {
     public static Node removeDuplicates(Node node){
         Set<Integer> elements = new HashSet<>();
         Node head = node;
+        Node previous = node;
 
         while(node != null){
             if(elements.contains(node.data)){
-                if(node.next == null){
-                    return node;
-                } else {
-                    node = node.next.next;
-                }
+                previous.next = node.next;
             } else {
                 elements.add(node.data);
-                node = node.next;
+                previous = node;
             }
+            node = node.next;
         }
         return head;
     }
