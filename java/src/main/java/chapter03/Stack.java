@@ -21,4 +21,8 @@ public class Stack {
     Object peek(){
         return top.data;
     }
+
+    boolean isEmpty(){
+        return top == null;
+    }
 }
