@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter01.Q01Spec" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-05-31T09:48:11" hostname="Matteos-MacBook-Pro.local" time="0.167">
+  <properties/>
+  <testcase name="is unique chars should return false for a text longer then 256 chars" classname="chapter01.Q01Spec" time="0.141"/>
+  <testcase name="is unique chars should return false when receives null" classname="chapter01.Q01Spec" time="0.0"/>
+  <testcase name="is unique chars should return true when receives abc" classname="chapter01.Q01Spec" time="0.017"/>
+  <testcase name="is unique chars should return false when receives defghd" classname="chapter01.Q01Spec" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

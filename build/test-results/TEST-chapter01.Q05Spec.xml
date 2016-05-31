@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter01.Q05Spec" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-05-31T09:48:11" hostname="Matteos-MacBook-Pro.local" time="0.021">
+  <properties/>
+  <testcase name="it should calculate the compressed size of aa as 2" classname="chapter01.Q05Spec" time="0.004"/>
+  <testcase name="it should calculate the compressed size of ab as 4" classname="chapter01.Q05Spec" time="0.003"/>
+  <testcase name="it should calculate the compressed size of abb as 4" classname="chapter01.Q05Spec" time="0.001"/>
+  <testcase name="it should calculate the compressed size of aabbbcccc as 6" classname="chapter01.Q05Spec" time="0.003"/>
+  <testcase name="it should calculate the compressed size of aaaaaaaaaab as 5" classname="chapter01.Q05Spec" time="0.001"/>
+  <testcase name="it should compress aabbb to a2b3" classname="chapter01.Q05Spec" time="0.001"/>
+  <testcase name="it should compress aabcccccaaa to a2b1c5a3" classname="chapter01.Q05Spec" time="0.0"/>
+  <testcase name="it should compress abb to abb" classname="chapter01.Q05Spec" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

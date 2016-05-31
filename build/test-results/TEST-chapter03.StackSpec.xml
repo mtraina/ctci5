@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter03.StackSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-31T09:48:12" hostname="Matteos-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="should push/pop in the right order" classname="chapter03.StackSpec" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

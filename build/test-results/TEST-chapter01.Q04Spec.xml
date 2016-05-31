@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter01.Q04Spec" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-05-31T09:48:11" hostname="Matteos-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="when it receives cheers of length 6, it should replace the spaces and return cheers" classname="chapter01.Q04Spec" time="0.007"/>
+  <testcase name="when it receives hello world of length 11, it should replace the spaces and return hello%20world" classname="chapter01.Q04Spec" time="0.0"/>
+  <testcase name="when it receives looking forward to it of length 21, it should replace the spaces and return looking%20forward%20to%20it" classname="chapter01.Q04Spec" time="0.0"/>
+  <testcase name="when it receives danger!   of length 9, it should replace the spaces and return danger!%20%20" classname="chapter01.Q04Spec" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
